@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		65778AD01EE8F7B6008A019D /* TutorialVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65778ACF1EE8F7B6008A019D /* TutorialVC.swift */; };
 		65BD78A31EE4E38700BA1A42 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BD78A21EE4E38700BA1A42 /* AppDelegate.swift */; };
-		65BD78A51EE4E38700BA1A42 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BD78A41EE4E38700BA1A42 /* ViewController.swift */; };
 		65BD78A81EE4E38700BA1A42 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65BD78A61EE4E38700BA1A42 /* Main.storyboard */; };
 		65BD78AB1EE4E38700BA1A42 /* TeaBook.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 65BD78A91EE4E38700BA1A42 /* TeaBook.xcdatamodeld */; };
 		65BD78AD1EE4E38700BA1A42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65BD78AC1EE4E38700BA1A42 /* Assets.xcassets */; };
@@ -22,9 +22,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		65778ACF1EE8F7B6008A019D /* TutorialVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialVC.swift; sourceTree = "<group>"; };
 		65BD789F1EE4E38700BA1A42 /* TeaBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TeaBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65BD78A21EE4E38700BA1A42 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		65BD78A41EE4E38700BA1A42 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		65BD78A71EE4E38700BA1A42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		65BD78AA1EE4E38700BA1A42 /* TeaBook.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TeaBook.xcdatamodel; sourceTree = "<group>"; };
 		65BD78AC1EE4E38700BA1A42 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -69,7 +69,27 @@
 			isa = PBXGroup;
 			children = (
 				65BD78A21EE4E38700BA1A42 /* AppDelegate.swift */,
-				65BD78A41EE4E38700BA1A42 /* ViewController.swift */,
+				65CD408D1EE6AED100CC11D4 /* Controller */,
+				65CD408E1EE6AEE400CC11D4 /* View */,
+				65BD78AC1EE4E38700BA1A42 /* Assets.xcassets */,
+				65BD78AE1EE4E38700BA1A42 /* LaunchScreen.storyboard */,
+				65BD78B11EE4E38700BA1A42 /* Info.plist */,
+				65BD78A91EE4E38700BA1A42 /* TeaBook.xcdatamodeld */,
+			);
+			path = TeaBook;
+			sourceTree = "<group>";
+		};
+		65CD408D1EE6AED100CC11D4 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				65778ACF1EE8F7B6008A019D /* TutorialVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		65CD408E1EE6AEE400CC11D4 /* View */ = {
+			isa = PBXGroup;
+			children = (
 				65BD78A61EE4E38700BA1A42 /* Main.storyboard */,
 				65BD78BA1EE4E5C300BA1A42 /* Home.storyboard */,
 				65BD78BC1EE4E5CE00BA1A42 /* Source.storyboard */,
@@ -77,12 +97,8 @@
 				65BD78C01EE4E5F500BA1A42 /* Activity.storyboard */,
 				65BD78C21EE4E60200BA1A42 /* Personal.storyboard */,
 				65BD78B71EE4E55B00BA1A42 /* Tutorial.storyboard */,
-				65BD78AC1EE4E38700BA1A42 /* Assets.xcassets */,
-				65BD78AE1EE4E38700BA1A42 /* LaunchScreen.storyboard */,
-				65BD78B11EE4E38700BA1A42 /* Info.plist */,
-				65BD78A91EE4E38700BA1A42 /* TeaBook.xcdatamodeld */,
 			);
-			path = TeaBook;
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,7 +179,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				65BD78A51EE4E38700BA1A42 /* ViewController.swift in Sources */,
+				65778AD01EE8F7B6008A019D /* TutorialVC.swift in Sources */,
 				65BD78AB1EE4E38700BA1A42 /* TeaBook.xcdatamodeld in Sources */,
 				65BD78A31EE4E38700BA1A42 /* AppDelegate.swift in Sources */,
 			);
