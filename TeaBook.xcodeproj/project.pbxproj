@@ -19,6 +19,7 @@
 		65BD78BF1EE4E5DC00BA1A42 /* Library.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65BD78BE1EE4E5DC00BA1A42 /* Library.storyboard */; };
 		65BD78C11EE4E5F500BA1A42 /* Activity.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65BD78C01EE4E5F500BA1A42 /* Activity.storyboard */; };
 		65BD78C31EE4E60200BA1A42 /* Personal.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65BD78C21EE4E60200BA1A42 /* Personal.storyboard */; };
+		AAF3DA0A1EEAE72D000FAD9D /* ViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF3DA091EEAE72D000FAD9D /* ViewExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		65BD78BE1EE4E5DC00BA1A42 /* Library.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Library.storyboard; sourceTree = "<group>"; };
 		65BD78C01EE4E5F500BA1A42 /* Activity.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Activity.storyboard; sourceTree = "<group>"; };
 		65BD78C21EE4E60200BA1A42 /* Personal.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Personal.storyboard; sourceTree = "<group>"; };
+		AAF3DA091EEAE72D000FAD9D /* ViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				65BD78A21EE4E38700BA1A42 /* AppDelegate.swift */,
+				AAF3DA0B1EEAE750000FAD9D /* Utility */,
 				65CD408D1EE6AED100CC11D4 /* Controller */,
 				65CD408E1EE6AEE400CC11D4 /* View */,
 				65BD78AC1EE4E38700BA1A42 /* Assets.xcassets */,
@@ -99,6 +102,14 @@
 				65BD78B71EE4E55B00BA1A42 /* Tutorial.storyboard */,
 			);
 			name = View;
+			sourceTree = "<group>";
+		};
+		AAF3DA0B1EEAE750000FAD9D /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				AAF3DA091EEAE72D000FAD9D /* ViewExtensions.swift */,
+			);
+			name = Utility;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -181,6 +192,7 @@
 			files = (
 				65778AD01EE8F7B6008A019D /* TutorialVC.swift in Sources */,
 				65BD78AB1EE4E38700BA1A42 /* TeaBook.xcdatamodeld in Sources */,
+				AAF3DA0A1EEAE72D000FAD9D /* ViewExtensions.swift in Sources */,
 				65BD78A31EE4E38700BA1A42 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
