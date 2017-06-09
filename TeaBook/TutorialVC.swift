@@ -8,39 +8,25 @@
 
 import UIKit
 
-class TutorialVC: UIViewController, UIScrollViewDelegate {
+class TutorialVC: UIViewController {
 
-    
-    
+    // MARK: - Outlets
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var pageControl: UIPageControl!
     @IBOutlet weak var nextButton: UIButton!
-        
-    
-    
+  
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        scrollView.delegate = self
     }
 
     override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
         pageControl.numberOfPages = Int(scrollView.contentSize.width / scrollView.bounds.width)
     }
     
     override func viewDidDisappear(_ animated: Bool) {
+        viewDidDisappear(animated)
         UIApplication.shared.statusBarStyle = .default
-    }
-
-    func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        pageControl.currentPage = Int((scrollView.contentOffset.x + scrollView.bounds.width / 2) / scrollView.bounds.width)
-        
-        if pageControl.currentPage == 3 {
-            nextButton.setTitle("Bỏ qua", for: .normal)
-        } else {
-            nextButton.setTitle("Tiếp tục", for: .normal)
-        }
-    
     }
     
     @IBAction func nextOrPass(_ sender: UIButton) {
@@ -53,36 +39,19 @@ class TutorialVC: UIViewController, UIScrollViewDelegate {
             performSegue(withIdentifier: "toTabbar", sender: sender)
         }
     }
-    
+  
 }
 
-
-extension UIView {
-    @IBInspectable var cornerRadius: CGFloat {
-        get {
-            return layer.cornerRadius
-        }
-        set {
-            layer.cornerRadius = newValue
-            layer.masksToBounds = newValue > 0
-        }
-    }
+// MARK: - UIScrollViewDelegate
+extension TutorialVC: UIScrollViewDelegate {
+  func scrollViewDidScroll(_ scrollView: UIScrollView) {
+    print(scrollView.contentOffset.x)
+    pageControl.currentPage = Int((scrollView.contentOffset.x + scrollView.bounds.width / 2) / scrollView.bounds.width)
     
-    @IBInspectable var borderWidth: CGFloat {
-        get {
-            return layer.borderWidth
-        }
-        set {
-            layer.borderWidth = newValue
-        }
+    if pageControl.currentPage == 3 {
+      nextButton.setTitle("Bỏ qua", for: .normal)
+    } else {
+      nextButton.setTitle("Tiếp tục", for: .normal)
     }
-    
-    @IBInspectable var borderColor: UIColor {
-        get {
-            return UIColor(cgColor: layer.borderColor!)
-        }
-        set {
-            layer.borderColor = newValue.cgColor
-        }
-    }
+  }
 }
