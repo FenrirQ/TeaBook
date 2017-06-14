@@ -25,7 +25,7 @@ class TutorialVC: UIViewController {
     }
     
     override func viewDidDisappear(_ animated: Bool) {
-        viewDidDisappear(animated)
+        super.viewDidDisappear(animated)
         UIApplication.shared.statusBarStyle = .default
     }
     
