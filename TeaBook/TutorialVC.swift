@@ -37,6 +37,7 @@ class TutorialVC: UIViewController {
             
         } else {
             performSegue(withIdentifier: "toTabbar", sender: sender)
+            UserDefaults.standard.set(true, forKey: "isPresentTutorial")
         }
     }
   
